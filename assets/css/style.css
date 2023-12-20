@@ -48,22 +48,35 @@ img {
 .section {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin: 0px 20px;
 }
 
+.block1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
 .div3 {
-    width: 55%;
     background: #eaeaf4;
+    padding: 4px 15px;
 }
 
 .div3 a {
     text-decoration: none;
     font-size: 1.4em;
     color: black;
-    padding: 0px 10px;
 }
 
-.div4  button{
+.div4 {
+    background-color: #eaeaf4;
+    padding: 8px 15px;
+    
+}
+
+.div5  button{
     font-size: 16px;
     font-weight: 600;
     padding: 8px 45px;
