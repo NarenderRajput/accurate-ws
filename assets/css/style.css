@@ -36,9 +36,10 @@ img {
 }
 
 .div2  button{
+    width: 200px;
     font-size: 16px;
     font-weight: 600;
-    padding: 8px 10px;
+    padding: 10px;
     border: 1px solid rgb(184, 180, 180);
     border-radius: 3px;
     color: #03776d;
@@ -84,10 +85,10 @@ img {
 }
 
 .div5  button{
-    width: 100%;
+    width: 200px;
     font-size: 16px;
     font-weight: 600;
-    padding: 4px 45px;
+    padding: 12px;
     border: 1px solid rgb(184, 180, 180);
     border-radius: 3px;
     color: white;
@@ -102,6 +103,11 @@ img {
     margin: 50px;
 }
 
+.section1>span {
+    width: 5%;
+    color: blue;
+}
+
 .block2 {
     display: flex;
     justify-content: center;
@@ -112,6 +118,10 @@ img {
 }
 
 .div6 {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    flex-wrap: wrap;
     width: 22%;
     border: 1px solid rgb(230, 224, 224);
     border-radius: 5px;
@@ -119,6 +129,7 @@ img {
 }
 
 .div6 p {
+    width: 100%;
     font-size: 1em;
     color: #eaeaf4;
     background: #505050;
@@ -126,7 +137,8 @@ img {
 }
 
 .div6 img {
-    height: 50%;
+    width: 250px;
+    height: 250px;
     padding: 15px;
 }
 
@@ -146,6 +158,10 @@ img {
 
 .section2>h1 {
     margin: 35px;
+}
+
+.section2>span {
+    background: blue;
 }
 
 .wrapper {
@@ -174,3 +190,91 @@ img {
     width: 25px;
     height: 25px;
 }
+
+.section3 {
+    text-align: center;
+}
+
+.section3>button {
+    font-size: 16px;
+    padding: 13px;
+    margin: 30px;
+    color: rgb(158, 156, 156);
+    background: transparent;
+    border: 1px solid rgb(116, 114, 114);
+    border-radius: 3px;
+}
+
+.block5 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.div7 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: baseline;
+    width: 22%;
+    color: rgb(151, 149, 149);
+    text-align: center;
+    border: 1px solid rgb(224, 219, 219);
+    border-radius: 3px;
+
+}
+
+.div7 img {
+    width: 250px;
+    height: 250px;
+    padding: 10px;  
+}
+
+.div7 h1 {
+    color: blue;
+    padding: 15px;
+}
+
+.section4 {
+    text-align: center;
+}
+
+.section4>h1 {
+    padding-bottom: 30px;
+}
+
+.section4>button {
+    font-size: 16px;
+    padding: 13px;
+    margin: 30px;
+    color: rgb(158, 156, 156);
+    background: transparent;
+    border: 1px solid rgb(116, 114, 114);
+    border-radius: 3px;
+}
+
+.block6 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+.div8 {
+    width: 22%;
+}
+
+.div9 {
+    height: 100%;
+    border: 1px solid rgb(185, 182, 182);
+
+}
+
+.div9 img {
+    
+    padding: 0px 20px;
+}
+
+
