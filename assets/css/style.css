@@ -65,23 +65,42 @@ img {
 .div3 {
     width: 100%;
     background: #eaeaf4;
-    padding: 10px 15px;
+    padding: 10px;
 }
 
 .div3 a {
     text-decoration: none;
     font-size: 1.4em;
     color: black;
+    padding: 10px;
+}
+
+a.active {
+    background-color: #2d3192;
+    color: white;
+    
 }
 
 .div4 {
-    width: 25%;
+    position: relative;
     font-size: 1em;
     background-color: #eaeaf4;
-    padding: 14px;
     border-left: 2px solid #777777;
     margin-right: 15px;
-    
+}
+
+.div4 input {
+    padding: 15px;
+    padding-left: 30px;
+    background: transparent;  
+    border: none; 
+}
+
+.div4 i {
+    color: #3cb5be;
+    position: absolute;
+    padding: 15px;
+    left: -5;
 }
 
 .div5  button{
@@ -118,22 +137,42 @@ img {
 }
 
 .div6 {
+    position: relative;
     display: flex;
     justify-content: space-around;
-    align-items: baseline;
     flex-wrap: wrap;
     width: 22%;
     border: 1px solid rgb(230, 224, 224);
     border-radius: 5px;
     text-align: center;
+    padding-bottom: 50px;
 }
 
-.div6 p {
+.gallery-label {
+    position: absolute;
+    bottom : 0;
+}
+
+.div6>p, .div6>.gallery-label {
     width: 100%;
     font-size: 1em;
     color: #eaeaf4;
     background: #505050;
     padding: 13px;
+}
+
+.div6 button {
+    display: none;
+    width: 50%;
+    padding: 10px;
+    margin: 10px 0px;
+    border: none;
+    border-radius: 5px;
+
+}
+
+.div6:hover button {
+    display:inline-block;
 }
 
 .div6 img {
@@ -208,8 +247,8 @@ img {
 .block5 {
     display: flex;
     justify-content: space-around;
-    align-items: center;
     flex-wrap: wrap;
+    gap: 20px;
 }
 
 .div7 {
@@ -222,6 +261,7 @@ img {
     text-align: center;
     border: 1px solid rgb(224, 219, 219);
     border-radius: 3px;
+   
 
 }
 
@@ -277,4 +317,187 @@ img {
     padding: 0px 20px;
 }
 
+.section5 {
+    max-width: 800px;
+    margin: auto;
+    border: 1px solid rgb(224, 223, 223);
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+
+.section5>.div10:first-child {
+    color: white;
+    background: #2d3192;
+    font-size: 20px;
+}
+
+.div10 {
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px solid rgb(224, 223, 223);
+    padding: 10px 0px;
+    font-size: 18px;
+    color: rgb(158, 156, 156);
+    
+}
+
+.div10>span:first-child {
+    width: 20%;
+    padding-left: 50px;
+}
+
+.div10>span:last-child {
+    width: 80%;
+}
+
+.div11 {
+    color: white;
+    background: #2d3192;
+    padding: 10px;
+    margin-top: 20px ;
+}
+
+.section6 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #eaeaf4;
+    padding: 10px;
+}
+
+.block7 {
+    max-width: 50%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-size: 1.1rem;
+    line-height: 1.5;
+    
+
+}
+
+.div12 {
+    width: 30%
+}
+
+.div13 {
+    width: 60%;
+}
+
+.div13 p>span {
+    color: #589ee9;
+    text-decoration: underline;
+}
+
+.div13>span {
+    color: #777777;
+    font-size: 20px;
+}
+
+#gc {
+    color: #4caf50;
+    font-size: 14px;
+    margin-left: 20px;
+}
+
+.div14 {
+    margin-top: 20px;
+}
+.div14 button{
+    padding: 7px;
+    border-radius: 5px;
+    font-size: 16px;
+    border: 1px solid rgb(26, 25, 25);
+}
+
+.div14>button:first-child  {
+    background-color: #777777;
+    color: #ffffff;
+    border: none;
+    padding: 8px;
+}
+
+.div15 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.div16 img {
+    width: 25px;
+    height: 25px;
+}
+
+.div17 {
+    font-size: 20px;
+    margin: 0px 40px;
+}
+
+.block8 {
+    max-width: 40%;
+    background-color: #ffffff;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+.block8 h1 {
+    color: #2e3192;
+}
+
+.pr {
+    position: relative;
+}
+.pr>label {
+    position: absolute;
+    top: 20%;
+    left: 75px;
+}
+
+.pr1 {
+    position: relative;
+
+}
+
+.pr1>label {
+    position: absolute;
+    top: 14%;
+    left: 75px;
+}
+.block8 input {
+    width: 65%;
+    padding: 20px;
+    margin: 10px;
+}
+
+.block8 button {
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 5px;
+    color: #ffffff;
+    background: #777777;
+    border: none;
+}
+
+.section7 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.div18 {
+    font-size: 20px;
+    padding: 30px 10px;
+}
+
+.div19 {
+    font-size: 20px;
+}
+
+.div19 img {
+    width: 50px;
+    height: 50px;
+}
 
