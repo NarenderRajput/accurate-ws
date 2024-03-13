@@ -78,7 +78,7 @@ img {
 }
 
 .div3 {
-    width: 80%;
+    width: 60%;
     padding: 10px;
     position: absolute;
     color: black;
@@ -637,6 +637,7 @@ a.active {
         margin-top: 10%;    
     }
 
+
     .block5 {
         justify-content: left;
         margin: 40px;
@@ -650,6 +651,11 @@ a.active {
     .div8 {
         width: 40%;
         margin: 20px;
+    }
+
+    .pr1>label {
+        
+        left: 55px;
     }
 
 }
