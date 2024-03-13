@@ -61,12 +61,44 @@ img {
 
 }
 
+.sm_nav {
+    display: none;
+    text-align: center;
+}
+
+.button {
+    background-color: transparent;
+    color: black;
+    padding: 16px;
+    font-size: 30px;
+    border: none;
+    cursor: pointer;
+    border: 1px solid black;
+    border-radius: 10px;
+}
 
 .div3 {
-    width: 100%;
-    background: #eaeaf4;
+    width: 80%;
     padding: 10px;
+    position: absolute;
+    color: black;
+    background-color: #f9ece6;
+    z-index: 1;
+    left: 10px;
+    margin: 10px;
 }
+
+.sm-content a {
+    color: black;
+    padding: 10px 0px;
+    text-decoration: none;
+    display: block;
+    font-size: 14px;
+}
+
+.button:hover .div3 {
+    display: block;
+} 
 
 .div3 a {
     text-decoration: none;
@@ -82,6 +114,7 @@ a.active {
 }
 
 .div4 {
+    width: 10%;
     position: relative;
     font-size: 1em;
     background-color: #eaeaf4;
@@ -148,6 +181,7 @@ a.active {
     padding-bottom: 50px;
 }
 
+
 .gallery-label {
     position: absolute;
     bottom : 0;
@@ -155,6 +189,7 @@ a.active {
 
 .div6>p, .div6>.gallery-label {
     width: 100%;
+    height: 20%;
     font-size: 1em;
     color: #eaeaf4;
     background: #505050;
@@ -164,12 +199,15 @@ a.active {
 .div6 button {
     display: none;
     width: 50%;
-    padding: 10px;
-    margin: 10px 0px;
+    padding: 20px;
+    margin: 20px;
     border: none;
     border-radius: 5px;
-
+    background-color:  #505050;;
+    color: white;
 }
+
+
 
 .div6:hover button {
     display:inline-block;
@@ -288,6 +326,7 @@ a.active {
     font-size: 16px;
     padding: 13px;
     margin: 30px;
+    margin-top: 5%;
     color: rgb(158, 156, 156);
     background: transparent;
     border: 1px solid rgb(116, 114, 114);
@@ -297,7 +336,6 @@ a.active {
 .block6 {
     display: flex;
     justify-content: space-around;
-    align-items: center;
     flex-wrap: wrap;
 
 }
@@ -313,7 +351,8 @@ a.active {
 }
 
 .div9 img {
-    
+    width: 250px;
+    height: 200px;
     padding: 0px 20px;
 }
 
@@ -359,8 +398,8 @@ a.active {
 
 .section6 {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
+    flex-wrap: wrap;
     background-color: #eaeaf4;
     padding: 10px;
 }
@@ -501,3 +540,198 @@ a.active {
     height: 50px;
 }
 
+@media only screen and (max-width:992px) {
+    
+    .wrapper {
+        justify-content: left;
+    }
+
+    .block4 {
+        width: 28%;
+    }
+
+    .div7 {
+        justify-content: left;
+        width: 30%;
+    }
+
+    .div9 img {
+        width: 210px;
+        height: 200px;
+        padding: 0px 10px;
+    }
+
+    .block5 {
+        justify-content: left;
+    }
+
+    .section4>button {
+        margin: 20px;
+        margin-top: 10%;
+        
+    }
+
+    .block7 {
+        width: 100%;
+    }
+
+    .div12 {
+        width: 45%;
+    }
+
+    .div13 {
+        width: 70%;
+    }
+
+    .block8 {
+        width: 50%;
+    }
+
+
+}
+
+@media only screen and (max-width:768px) {
+
+    * {
+        font-size: 1.1rem;
+    }
+
+    .block1 {
+        width: 70%;
+    }
+
+
+    .div4 {
+        display: none;
+    }
+
+    .wrapper {
+        justify-content: left;
+    }
+
+    .block2 {
+        grid-row-gap: 20px;
+    }
+
+    .block4 {
+        width: 43%;
+    }
+
+    .div6 {
+        width: 40%;
+    }
+
+    .div6 img {
+        width: 100%;
+    }
+
+    .div7 img {
+        width: 100%;
+    }
+
+    .div8 {
+        width: 41%;
+    }
+
+    .section4>button {
+        margin-top: 10%;    
+    }
+
+    .block5 {
+        justify-content: left;
+        margin: 40px;
+        gap: 32px;
+    }
+
+    .block6 {
+        gap: 50px;
+    }
+
+    .div8 {
+        width: 40%;
+        margin: 20px;
+    }
+
+}
+
+@media only screen and (max-width:600px){
+    
+    .block1 {
+        display: none;
+    }
+
+    .sm_nav {
+        display: inline-block !important;
+    }
+
+    .nav_content a {
+        display: block;
+    }
+
+    .div2 {
+        display: none;
+    }
+
+    .div3 {
+        display: none;
+    }
+
+
+    .div5 {
+        display: none;
+    }
+
+    .div6 {
+        width: 45%;
+    }
+
+    .block4 {
+        width: 43%;
+    }
+
+    .div7 {
+        width: 46%;
+    }
+
+    .div8 {
+        width: 82%;
+    }
+
+    .div8 img {
+        width: 350px;
+    }
+
+    .block7 {
+        width: 100%;
+    }
+
+    .div12 {
+        width: 85%;
+    }
+
+    .div13 {
+        width: 100%;
+    }
+
+    .block8 {
+        width: 100%%;
+    }
+
+    .block8 input {
+        width: 100%;
+        padding: 20px;
+        margin: 10px;
+    }
+
+    .pr>label {
+        left: 20px;
+    }
+
+    .pr1>label {
+        left: 20px;
+    }
+
+    .section7>div {
+        width: 100%;
+    }
+}
