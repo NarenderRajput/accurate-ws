@@ -48,7 +48,7 @@ img {
 
 .section {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     margin: 0px 20px;
 }
@@ -56,7 +56,7 @@ img {
 .block1 {
     width: 85%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 
 }
@@ -66,45 +66,29 @@ img {
     text-align: center;
 }
 
+
+.sm-content a {
+    display: block;
+    color: black;
+    padding: 10px 0px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
 .button {
     background-color: transparent;
     color: black;
-    padding: 16px;
-    font-size: 30px;
+    padding: 10px;
+    font-size: 28px;
     border: none;
     cursor: pointer;
     border: 1px solid black;
     border-radius: 10px;
 }
 
-.div3 {
-    width: 60%;
-    padding: 10px;
-    position: absolute;
-    color: black;
-    background-color: #f9ece6;
-    z-index: 1;
-    left: 10px;
-    margin: 10px;
-}
 
-.sm-content a {
-    color: black;
-    padding: 10px 0px;
-    text-decoration: none;
-    display: block;
-    font-size: 14px;
-}
-
-.button:hover .div3 {
-    display: block;
-} 
-
-.div3 a {
-    text-decoration: none;
-    font-size: 1.4em;
-    color: black;
-    padding: 10px;
+.button:hover .sm-content {
+    display: inline-block !important;
 }
 
 a.active {
@@ -113,17 +97,35 @@ a.active {
     
 }
 
+.div3 {
+    width: 70%;
+    padding: 10px;
+    color: black;
+    background-color: #eaeaf4;
+    margin: 10px;
+    margin-right: 0;
+}
+ 
+
+.div3 a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: black;
+    padding: 10px;
+}
+
+
 .div4 {
-    width: 10%;
+    width: 25%;
     position: relative;
-    font-size: 1em;
+    font-size: 1rem;
     background-color: #eaeaf4;
     border-left: 2px solid #777777;
-    margin-right: 15px;
 }
 
 .div4 input {
-    padding: 15px;
+    width: 100%;
+    padding: 13px;
     padding-left: 30px;
     background: transparent;  
     border: none; 
@@ -132,8 +134,8 @@ a.active {
 .div4 i {
     color: #3cb5be;
     position: absolute;
-    padding: 15px;
-    left: -5;
+    top: 32%;
+    left: 10;
 }
 
 .div5  button{
@@ -155,10 +157,6 @@ a.active {
     margin: 50px;
 }
 
-.section1>span {
-    width: 5%;
-    color: blue;
-}
 
 .block2 {
     display: flex;
@@ -187,29 +185,31 @@ a.active {
     bottom : 0;
 }
 
-.div6>p, .div6>.gallery-label {
+.div6>.gallery-label {
     width: 100%;
-    height: 20%;
+    height: auto;
     font-size: 1em;
     color: #eaeaf4;
     background: #505050;
     padding: 13px;
 }
 
-.div6 button {
+.gallery-label .btn {
     display: none;
-    width: 50%;
+}
+
+.bset {
+    width: 100%;
     padding: 20px;
     margin: 20px;
     border: none;
     border-radius: 5px;
-    background-color:  #505050;;
-    color: white;
+    background-color:  #ffffff;;
 }
 
 
 
-.div6:hover button {
+.gallery-label:hover  .btn {
     display:inline-block;
 }
 
@@ -220,13 +220,39 @@ a.active {
 }
 
 .block3 {
+    color: #444444;
     text-align: center;
     font-size: 1.2em;
     padding: 20px;
 }
 
+.text-center {
+    text-align: center;
+    
+}
+
+.icon-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background: #efefef;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.section1 .underline {
+    display: inline-block;
+    text-align: center;
+    width: 3%;
+    padding: 2px;
+    background-color: blue;
+}
+
 .section2 {
     text-align: center;
+    background-color: #ffffff;
 }
 
 .section2>p {
@@ -250,7 +276,6 @@ a.active {
 .block4 {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
     width: 22%;
     text-align: left;
     align-items: center;
@@ -259,20 +284,18 @@ a.active {
     font-size: 1.1em;
 }
 
-.block4>div>span {
-    color: gray;
-}
 
-.block4 i {
-    width: 25px;
-    height: 25px;
+.block4 svg {
+   width: 100%;
+   height: 100%;
+
 }
 
 .section3 {
     text-align: center;
 }
 
-.section3>button {
+.block5>button {
     font-size: 16px;
     padding: 13px;
     margin: 30px;
@@ -284,23 +307,17 @@ a.active {
 
 .block5 {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     flex-wrap: wrap;
     gap: 20px;
 }
 
 .div7 {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: baseline;
     width: 22%;
     color: rgb(151, 149, 149);
     text-align: center;
     border: 1px solid rgb(224, 219, 219);
     border-radius: 3px;
-   
-
 }
 
 .div7 img {
@@ -310,8 +327,24 @@ a.active {
 }
 
 .div7 h1 {
-    color: blue;
-    padding: 15px;
+    color: #2d3192;
+    padding: 10px;
+}
+
+.div7:hover {
+    box-shadow: 2px 2px 5px;
+}
+
+.wrap {
+    width: 100%;
+}
+
+.wrap > button {
+    text-align: left;
+    color: gray;
+    border: none;
+    background: transparent;
+    padding: 10px;
 }
 
 .section4 {
@@ -362,6 +395,7 @@ a.active {
     border: 1px solid rgb(224, 223, 223);
     border-radius: 5px;
     margin-bottom: 30px;
+    box-shadow: 2px 2px 5px rgb(233, 232, 232);
 }
 
 .section5>.div10:first-child {
@@ -400,7 +434,7 @@ a.active {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    background-color: #eaeaf4;
+    background-color: #f8f8f8;
     padding: 10px;
 }
 
@@ -450,7 +484,7 @@ a.active {
 }
 
 .div14>button:first-child  {
-    background-color: #777777;
+    background-color: #048076;
     color: #ffffff;
     border: none;
     padding: 8px;
@@ -478,6 +512,8 @@ a.active {
     background-color: #ffffff;
     padding: 10px 20px;
     text-align: center;
+    border: 1px solid rgb(235, 233, 233);
+    border-radius: 5px;
 }
 
 .block8 h1 {
@@ -489,8 +525,9 @@ a.active {
 }
 .pr>label {
     position: absolute;
-    top: 20%;
-    left: 75px;
+    top: 12%;
+    left: 20px;
+    background: white;
 }
 
 .pr1 {
@@ -500,13 +537,20 @@ a.active {
 
 .pr1>label {
     position: absolute;
-    top: 14%;
-    left: 75px;
+    top: 8%;
+    left: 20px;
+    background: white;
 }
+
+.align-left {
+    text-align: left;
+    margin-top: 12px;
+}
+
 .block8 input {
-    width: 65%;
+    width: 100%;
     padding: 20px;
-    margin: 10px;
+    color: #fff;
 }
 
 .block8 button {
@@ -514,7 +558,7 @@ a.active {
     padding: 10px;
     border-radius: 5px;
     color: #ffffff;
-    background: #777777;
+    background: #05897f;
     border: none;
 }
 
@@ -592,18 +636,18 @@ a.active {
 
 @media only screen and (max-width:768px) {
 
-    * {
-        font-size: 1.1rem;
+    .section {
+        justify-content: space-between;
     }
-
-    .block1 {
-        width: 70%;
-    }
-
-
-    .div4 {
+    
+    .block1{
         display: none;
     }
+
+    .sm_nav {
+        display: inline-block !important;
+    }
+
 
     .wrapper {
         justify-content: left;
@@ -662,13 +706,6 @@ a.active {
 
 @media only screen and (max-width:600px){
     
-    .block1 {
-        display: none;
-    }
-
-    .sm_nav {
-        display: inline-block !important;
-    }
 
     .nav_content a {
         display: block;
