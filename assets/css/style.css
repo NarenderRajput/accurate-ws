@@ -68,7 +68,7 @@ img {
 
 
 .sm-content a {
-    display: block;
+    display: none;
     color: black;
     padding: 10px 0px;
     text-decoration: none;
@@ -93,7 +93,7 @@ img {
 
 a.active {
     background-color: #2d3192;
-    color: white;
+    color: white !important;
     
 }
 
@@ -638,6 +638,7 @@ a.active {
 
     .section {
         justify-content: space-between;
+        align-items: none;
     }
     
     .block1{
