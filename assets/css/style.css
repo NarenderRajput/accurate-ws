@@ -748,16 +748,23 @@ a.active {
     }
 
     .div6 {
-        width: 45%;
+        width: 80%;
     }
 
+
     .block4 {
-        width: 43%;
+        width: 80%;
+    }
+
+    .block5 {
+        justify-content: center;
     }
 
     .div7 {
-        width: 46%;
+        width: 100%;
     }
+
+
 
     .div8 {
         width: 82%;
@@ -777,6 +784,10 @@ a.active {
 
     .div13 {
         width: 100%;
+    }
+
+    .div14 button {
+        margin: 5px;
     }
 
     .block8 {
